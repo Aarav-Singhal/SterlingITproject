@@ -29,12 +29,12 @@
         }
 
         .main {
-            width: 590px;
+            width: 550px;
             justify-content: center;
             align-items: center;
             background-color: white;
             border-radius: 10px;
-            height: 400px;
+            height: 430px;
             box-shadow: 15px 15px 15px whitesmoke;
 
         }
@@ -50,22 +50,31 @@
             background-color: white;
             color: #dc3545 !important;
             border-bottom: 1px solid #dc3545;
+            border-radius: 0px;
         }
 
-        #btn-back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: none;
-        }
+            #btn-back-to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: none;
+            }
+
+            .custom-controller-width {
+                width: 5%;
+            }
     </style>
 
     <title>SterlingIT</title>
 </head>
 
 <body>
-    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
+    <button type="button" class="btn btn-danger btn-rounded btn-floating btn-lg" id="btn-back-to-top">
+        <i class="bi bi-chevron-up fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+            </svg></i>
     </button>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
@@ -111,7 +120,7 @@
             <h5 class="text-white">Come,Let's <span class="text-danger">Design,</span></h5>
         </div>
     </div>
-    <div class="banner-image1 d-flex w-100 vh-100  align-items-center mt-4">
+    <div class="banner-image1 d-flex w-100 vh-100  align-items-center mt-1">
         <div class="container main container-fluid">
             <ul class="nav nav-pills container content text-center justify-content-center align-items-center mt-4 border-bottom"
                 id="pills-tab" role="tablist">
@@ -133,8 +142,8 @@
             </ul>
 
             <div class="tab-content container content text-center nav nav-pills" id="pills-tab-content">
-                <div class="tab-pane fade show active tab-content text-start pt-3" id="pills-home" role="tabpanel"
-                    aria-labelledby="pills-home-tab">
+                <div class="tab-pane fade show active tab-content text-start px-5 py-4" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab" style="font-size: 15px;">
                     <span class="text-danger fw-bold  ">Sterling IT Solutions</span> <span>empowers clients across the
                         full
                         lifecycle of technology from planning
@@ -147,8 +156,8 @@
                         build a
                         solid software foundation for your business.</span>
                 </div>
-                <div class="tab-pane fade tab-content text-start pt-3" id="pills-profile" role="tabpanel"
-                    aria-labelledby="pills-profile-tab">We help you devise solutions that are not only technically sound
+                <div class="tab-pane fade tab-content text-start px-5 py-4" id="pills-profile" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" style="font-size: 15px;">We help you devise solutions that are not only technically sound
                     but build a digital platform for your business. We offer the right mix of experience, expertise, and
                     resources to turn your challenges into opportunities. We will start by turning your ideas into
                     actionable concepts. And then carry out the development process to bring those concepts to life.
@@ -157,8 +166,8 @@
                         may be. We can engage you to individuals with a specific skill set, manage capacity across a
                         team, or deliver in-house technology experts to take your project to full delivery.</p>
                 </div>
-                <div class="tab-pane fade tab-content text-start pt-3" id="pills-contact" role="tabpanel"
-                    aria-labelledby="pills-contact-tab">
+                <div class="tab-pane fade tab-content text-start  px-5 py-4" id="pills-contact" role="tabpanel"
+                    aria-labelledby="pills-contact-tab" style="font-size: 15px;">
                     <ul>
                         <li class="p-1">Get the best team with the right combination of talent & expertise</li>
                         <li class="p-1">Reduce hiring efforts</li>
@@ -178,11 +187,11 @@
                 -About the course-
             </h6>
         </div>
-        <div class="carousel-inner p-5" style="color: #253860; font-size: 12px;">
+        <div class="carousel-inner" style="color: #253860; font-size: 12px;">
             <div class="carousel-item active">
-                <div class="d-flex justify-content-evenly mb-3">
+                <div class="d-flex justify-content-evenly mb-3 px-5">
                     <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="d-flex flex-row justify-content-evenly fw-bold" style="color: #253860;">APPLICATIONS
+                        <h6 class="d-flex flex-row justify-content-evenly fw-bold " style="color: #253860;">APPLICATIONS
                         </h6>
                         <p>Using AI, we can - </p>
                         <ul>
@@ -249,7 +258,7 @@
                     AI in business management.</p>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly">
+                <div class="d-flex justify-content-evenly px-5">
                     <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
                         <h6 class="d-flex flex-row justify-content-evenly fw-bold" style="font-size: 15px;">INTEGRATING
                             BUSINESS OPERATIONS WITH ITS
@@ -294,7 +303,7 @@
                     aspects. We are here for you to help reap the real benefits of business service management.</p>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly">
+                <div class="d-flex justify-content-evenly px-5">
                     <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
                         <h6 class="d-flex flex-row justify-content-evenly mb-5 fw-bold">THE ROLE OF BIG DATA</h6>
                         <p class="mb-5">Over the past five years, there has been increased awareness of the role of
@@ -360,7 +369,7 @@
                     decisions and strategic steps.</p>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly">
+                <div class="d-flex justify-content-evenly px-5">
                     <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
                         <h6 class="d-flex flex-row justify-content-evenly fw-bold me-3" style="font-size: 14px;">DEVOPS
                             BEYOND DEVELOPMENT & OPERATIONS</h6>
@@ -423,7 +432,7 @@
                     DevOps.</p>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly">
+                <div class="d-flex justify-content-evenly px-5">
                     <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
                         <h6 class="d-flex flex-row justify-content-evenly fw-bold me-3" style="font-size: 13px;">
                             INTEGRATION
@@ -495,17 +504,20 @@
                     greater efficiency.</p>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev custom-controller-width" type="button"
+            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
+        <button class="carousel-control-next custom-controller-width" type="button"
+            data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
