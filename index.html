@@ -63,13 +63,25 @@
             .custom-controller-width {
                 width: 5%;
             }
+
+            .back-to-top-btn {
+                z-index: 10;
+            }
+
+            .height-70 {
+                height: 70vh;
+            }
+
+            h6 {
+                margin: 2.4rem 0;
+            }
     </style>
 
     <title>SterlingIT</title>
 </head>
 
 <body>
-    <button type="button" class="btn btn-danger btn-rounded btn-floating btn-lg" id="btn-back-to-top">
+    <button type="button" class="btn btn-danger btn-rounded btn-floating btn-sm back-to-top-btn" id="btn-back-to-top">
         <i class="bi bi-chevron-up fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -78,7 +90,7 @@
     </button>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Sterling<span class="text-danger fw-bold"
+            <a class="navbar-brand fw-bold" href="#">Sterling<span id="it" class="text-danger fw-bold"
                     role="listitem">IT</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +132,7 @@
             <h5 class="text-white">Come,Let's <span class="text-danger">Design,</span></h5>
         </div>
     </div>
-    <div class="banner-image1 d-flex w-100 vh-100  align-items-center mt-1">
+    <div class="banner-image1 d-flex w-100 vh-100  align-items-center">
         <div class="container main container-fluid">
             <ul class="nav nav-pills container content text-center justify-content-center align-items-center mt-4 border-bottom"
                 id="pills-tab" role="tablist">
@@ -181,17 +193,17 @@
             </div>
         </div>
     </div>
-    <div id="carouselExampleControls" class="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel carousel-dark slide mt-4" data-bs-interval="false">
         <div>
-            <h6 class="text-danger conatainer container-fluid justify-content-center align-items-center d-flex mt-4">
+            <h3 class="text-danger mt-4 text-center">
                 -About the course-
-            </h6>
+            </h3>
         </div>
         <div class="carousel-inner" style="color: #253860; font-size: 12px;">
             <div class="carousel-item active">
-                <div class="d-flex justify-content-evenly mb-3 px-5">
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="d-flex flex-row justify-content-evenly fw-bold " style="color: #253860;">APPLICATIONS
+                <div class="d-flex justify-content-evenly px-5 height-70">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center" style="color: #253860;">APPLICATIONS
                         </h6>
                         <p>Using AI, we can - </p>
                         <ul>
@@ -213,14 +225,14 @@
                             and improves the overall customer experience using Al.
                         </p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
                         <p><small class="fw-bold" style="color: #253860;">ARTIFICIAL INTELLIGENCE</small> can be
                             leveraged to increase revenue, improve customer experience,
                             increase productivity and efficiency and drive business growth and transformation. Companies
                             can now clearly understand and engage customers, automate business processes and increase
                             productivity and revenue while reducing operating costs with AI from our team at Sterling IT
                             Solutions</p>
-                        <h6 class="container d-flex flex-column fw-bold" style="font-size: 14px;">
+                        <h6 class="fw-bold text-left" style="font-size: 14px;">
                             IMPROVED IT PROCESSES AND COST EFFICIENT
                         </h6><span>
                             By utilizing artificial intelligence applications that uses machine learning, companies can
@@ -230,13 +242,13 @@
                             business functions and processes, from work schedules to manufacturing product pricing.
                         </span>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class=" justify-content-evenly d-flex flex-row fw-bold">PERSONALISED RESULTS </h6>
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center">PERSONALISED RESULTS </h6>
                         <p>Some organizations have begun to combine smart technologies, including facial recognition and
                             geospatial sottware, along with analytics, using smart technologies to first identify
                             customers and then promote products, services, or sales tailored to their personal
                             preferences.</p>
-                        <h6 class="justify-content-evenly d-flex flex-row fw-bold">WIDE RANGE OF APPLICATIONS</h6>
+                        <h6 class="text-center fw-bold">WIDE RANGE OF APPLICATIONS</h6>
                         <p>
                             Business processes are being automated by first digitizing them and then allowing users to
                             use applications based on new technologies, whether it be banking, travel, health care or
@@ -251,16 +263,16 @@
                         </p>
                     </div>
                 </div>
-                <p class="m-0 p-3 d-flex" style="font-size: 12px; color: white; background-color: #253860;">With
+                <div class="py-3 px-5" style="font-size: 12px; color: white; background-color: #253860;">With
                     Sterling IT, Now, you can improve marketing performance, better understand customers, segment to
                     create personalised experiences, and develop business strategies to help make business decisions and
                     use
-                    AI in business management.</p>
+                    AI in business management.</div>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly px-5">
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="d-flex flex-row justify-content-evenly fw-bold" style="font-size: 15px;">INTEGRATING
+                <div class="d-flex justify-content-evenly px-5 height-70">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center" style="font-size: 15px;">INTEGRATING
                             BUSINESS OPERATIONS WITH ITS
                             SERVICES</h6>
                         <p>IT Service Management (ITS) is a general term that describes a strategic
@@ -272,8 +284,8 @@
                             need to adopt IT
                             Service Management practices. </p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class=" fw-bold mt-3" style="font-size: 14px;">A TEAM COMMITTED TO TAKE YOU TO EXCELLENCE
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center" style="font-size: 14px;">A TEAM COMMITTED TO TAKE YOU TO EXCELLENCE
                         </h6>
                         <p>Implementing an ISM tramework for IT and business management can be a
                             key component of a successtul digital transtormation. implementation with the help of our
@@ -284,8 +296,8 @@
                             team will assist organizations meet their diverse needs by integrating different structures,
                             processes, and standards into their service management approach.</p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class=" justify-content-evenly d-flex flex-row fw-bold mt-3">ADDING BUSINESS VALUE </h6>
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center">ADDING BUSINESS VALUE </h6>
                         <p>ITSM includes all the individual activities and processes that support a service throughout
                             its lifecycle, from service management to change management, incident and problem
                             management, asset management, and knowledge management. IT service management is not just a
@@ -296,17 +308,17 @@
                             ready to help companies chart a new path forward in the field.</p>
                     </div>
                 </div>
-                <p class="mt-5 p-3 d-flex align-items-end"
+                <div class="py-3 px-5"
                     style="font-size: 12px; color: white; background-color: #253860;">Are you up
                     losing significant sponsorship to continue the transformational journey? We know that you don't want
                     to be one of those IT organisations that end up spending milions focusing only on tools or any other
-                    aspects. We are here for you to help reap the real benefits of business service management.</p>
+                    aspects. We are here for you to help reap the real benefits of business service management.</div>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly px-5">
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="d-flex flex-row justify-content-evenly mb-5 fw-bold">THE ROLE OF BIG DATA</h6>
-                        <p class="mb-5">Over the past five years, there has been increased awareness of the role of
+                <div class="d-flex justify-content-evenly px-5 height-70">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center">THE ROLE OF BIG DATA</h6>
+                        <p class="">Over the past five years, there has been increased awareness of the role of
                             bio data in providing invaluable information to an organization, identifying
                             strengths and weaknesses, and enabling companies to improve their practices. Big data
                             analytics is the often a complex process of examining big
@@ -319,8 +331,8 @@
                             science, and data analytics, and when used property, they can provide businesses with
                             valuable insights. </p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="container d-flex flex-column fw-bold ms-5 mb-5 mt-5">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center">
                             LET US BOOST YOUR BUSINESS!
                         </h6>
 
@@ -344,10 +356,10 @@
                             data in helping companies make key decisions cannot be underestimated.
                         </span>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class=" justify-content-evenly d-flex flex-row fw-bold mb-4">MAKING THE MOST OF BIG DATA
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center">MAKING THE MOST OF BIG DATA
                         </h6>
-                        <p class="mb-5">In a data world where the amount of information available to organizations
+                        <p class="">In a data world where the amount of information available to organizations
                             continues to grow exponentially, coco calorias one business intencence
                             con even work in tandem o moxmie einciency uncover actionable
                             insights, and help companies succeed. Analytics-driven organizations view big data as a
@@ -361,17 +373,17 @@
 
                     </div>
                 </div>
-                <p class="mt-5 p-3 d-flex align-items-end"
+                <div class="py-3 px-5"
                     style="font-size: 12px; color: white; background-color: #253860;">With big data analytics, we will
                     provide an almost endless source of business intelligence and insights that can lead to operational
                     improvements and new opportunities for companies to generate unrealised revenue in virtually any
                     industry. Notably, it can also be leveraged to analyze information that can lead to better business
-                    decisions and strategic steps.</p>
+                    decisions and strategic steps.</div>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly px-5">
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="d-flex flex-row justify-content-evenly fw-bold me-3" style="font-size: 14px;">DEVOPS
+                <div class="d-flex justify-content-evenly px-5 height-70">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center" style="font-size: 14px;">DEVOPS
                             BEYOND DEVELOPMENT & OPERATIONS</h6>
                         <p>DevOps (development and operations) practices help plan how both teams can work together to
                             provide the company's products and services, moot customer needs, and stay ahead of the
@@ -383,11 +395,11 @@
                             teams. in practice. the most successful Devons processes and cultures.con
                             go beyond development and operations. </p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="container d-flex flex-column fw-bold ps-5 mt- 5 ms-5 mb-3">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center">
                             OUR ROLE AND GOAL
                         </h6>
-                        <p class="mt-5"> By virtuary univine to processos and rosponsibintos o dovoloomon and
+                        <p class=""> By virtuary univine to processos and rosponsibintos o dovoloomon and
                             operations cams. mo automation or devops tools and sanwaro distribution
                             processes racilitates more effective collaboration. We encourage practices
                             naraciao more effective collaboration one end-to-end automaton of
@@ -410,8 +422,8 @@
                             incorporating certain practices into the software development life cycle.
                         </p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class=" justify-content-evenly d-flex flex-row fw-bold">LEVERAGING DEVOPS FOR BUSINESS
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center">LEVERAGING DEVOPS FOR BUSINESS
                             SUCCESS </h6>
                         <p>DevOps is a culture, mindset, tools, and practicos that enable development
                             and operations teams to agree on a common set of goals and collaborate seamlessly to deliver
@@ -424,17 +436,17 @@
                             collaboration, smoother integration, and automating low-value processes.</p>
                     </div>
                 </div>
-                <p class="mt-5 p-3 d-flex align-items-end"
+                <div class="py-3 px-5"
                     style="font-size: 12px; color: white; background-color: #253860;">Let us increase business agility
                     by creating the necessary collaboration, communication, and integration between teams in IT
                     organisations located around the world with DevOps. We can also enable scalable operation and
                     management of a company's infrastructure and associated development processes with implementing
-                    DevOps.</p>
+                    DevOps.</div>
             </div>
             <div class="carousel-item">
-                <div class="d-flex justify-content-evenly px-5">
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="d-flex flex-row justify-content-evenly fw-bold me-3" style="font-size: 13px;">
+                <div class="d-flex justify-content-evenly px-5 height-70">
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center" style="font-size: 13px;">
                             INTEGRATION
                             OF DIGITAL TECHNOLOGIES IN
                             BUSINESS</h6>
@@ -451,8 +463,8 @@
                             the way organizations deliver
                             value to customers.</p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class="container d-flex flex-column fw-bold  align-items-center mt-4"
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center"
                             style="font-size: 14px;">
                             IMPACT
                         </h6>
@@ -472,8 +484,8 @@
                             streamline their operations by automating data collection and analytics.
                         </p>
                     </div>
-                    <div class="container container-fliud d-flex flex-column justify-content-evenly w-33 p-12">
-                        <h6 class=" justify-content-evenly d-flex flex-row fw-bold mt-5" style="font-size: 14px;">WIDER
+                    <div class="container container-fliud d-flex flex-column justify-content-center w-33 p-12">
+                        <h6 class="fw-bold text-center" style="font-size: 14px;">WIDER
                             DOMAIN</h6>
                         <p>Digitization is the use of digital technologies to transform business processes and projects,
                             such as enabling employees to use new software platforms
@@ -496,12 +508,12 @@
                         </p>
                     </div>
                 </div>
-                <p class="mt-5 p-3 d-flex align-items-end"
+                <div class="py-3 px-5"
                     style="font-size: 12px; color: white; background-color: #253860;">We will help you in advancing the
                     organisation's entire IT system to improve overall efficiency and productivity in the digital
                     economy. Partner with Sterling IT to apply technology to create new business models, processes,
                     software, and systems that lead to more profitable revenues, greater competitive advantage, and
-                    greater efficiency.</p>
+                    greater efficiency.</div>
             </div>
         </div>
         <button class="carousel-control-prev custom-controller-width" type="button"
@@ -522,12 +534,15 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
         var nav = document.querySelector('nav');
+        var it = document.querySelector('#it');
 
         window.addEventListener('scroll', function () {
             if (window.pageYOffset > 100) {
-                nav.classList.add('bg-danger', 'shadow')
+                nav.classList.add('bg-danger', 'shadow');
+                it.classList.add('text-white')
             } else {
                 nav.classList.remove('bg-danger', 'shadow');
+                it.classList.remove('text-white');
             }
         });
         let mybutton = document.getElementById("btn-back-to-top");
