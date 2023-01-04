@@ -114,12 +114,14 @@
             border-radius: 20px;
             padding: 1.6rem;
             margin: 2rem;
+            max-height: 80%;
+            overflow: auto;
         }
 
         .form-bar {
             border: none;
             background-color: #e6e6e6;
-            padding: 1rem 0.8rem;
+            padding: 0.5rem 0.8rem;
             font-size: 1rem;
             resize: none;
             margin-bottom: 1rem;
@@ -646,7 +648,7 @@
                 </div>
                 <div class="mb-1">
                     <label for="message" class="form-label">Message</label>
-                    <textarea name="Message" id="message" cols="30" rows="5" class="form-bar" required></textarea>
+                    <textarea name="Message" id="message" cols="30" rows="2" class="form-bar" required></textarea>
                 </div>
                 <div class="text-center">
                     <input type="submit" value="Send Email" class="form-btn">
