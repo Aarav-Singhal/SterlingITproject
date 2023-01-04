@@ -113,6 +113,7 @@
             border-radius: 20px;
             padding: 1.6rem;
             margin: 2rem;
+            margin-top: 200px !important;
         }
 
         .form-bar {
@@ -141,6 +142,11 @@
             border-radius: 7px;
             margin-right: 20px;
             transition: 0.15s ease-in-out;
+        }
+
+        .form-btn:hover {
+            background-color: black;
+            color: white;
         }
 
         input[type=number]::-webkit-inner-spin-button,
@@ -612,8 +618,8 @@
     </div>
     <div id="contact" class="contact-banner-img d-flex w-100 vh-100 align-items-center justify-content-center">
         <div class="form container container-fluid bg-white mt-4">
-            <form action="mailto:info@sterlingsolutionsit.com" method="post" enctype="text/plain">
-                <h3 class="pt-2 fw-bold text-center">Contact Us</h3>
+            <form action="mailto:info@sterlingsolutionsit.com?subject=Got a Query" method="post" enctype="text/plain">
+                <h1 class="pt-2 fw-bold text-center">Contact Us</h1>
                 <div class="mb-3">
                     We'd love to hear from you!
                     If you have any questions or queries a member of staff will always be happy to help.
@@ -621,15 +627,16 @@
                 </div>
                 <div class="mb-3">
                     <label for="name" class="form-label text-left">Name</label>
-                    <input id="name" type="text" name="Name" class="form-bar">
+                    <input id="name" type="text" name="Name" class="form-bar" required>
                 </div>
                 <div class="mb-3">
                     <label for="phoneNumber" class="form-label">Phone Number</label>
-                    <input id="phoneNumber" type="number" name="Contact No." class="form-bar">
+                    <input id="phoneNumber" type="tel" name="Contact No." class="form-bar" minlength="10" maxlength="10"
+                        required onkeyup="numbersonly (this)">
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea name="Message" id="message" cols="30" rows="5" class="form-bar"></textarea>
+                    <textarea name="Message" id="message" cols="30" rows="5" class="form-bar" required></textarea>
                 </div>
                 <div class="text-center">
                     <input type="submit" value="Send Email" class="form-btn">
@@ -649,6 +656,10 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
+function numbersonly(input){
+    var regex = /[^0-9]/gi;
+    input.value = input.value.replace(regex,"");
+}
         var nav = document.querySelector('nav');
         var it = document.querySelector('#it');
 
